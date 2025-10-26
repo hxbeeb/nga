@@ -33,13 +33,12 @@ export default function Contact(){
             formData.append("_subject", "New contact from Northgate Automation");
             formData.append("_gotcha", "");
 
-            const res = await fetch(process.env.NEXT_PUBLIC_FORM_URL as string, {
+            const res = await fetch("/api/contact", {
                 method: "POST",
                 body: formData,
-                headers: {
-                    Accept: "application/json",
-                },
             });
+
+            const data = await res.json();
 
             if (res.ok) {
                 setFirstName("");

@@ -12,7 +12,7 @@ function scrollToId(id: string) {
 export default function Header(){
 
     return(
-        <div className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 shadow-sm">
+        <div className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 shadow-sm rounded-b-2xl ">
             <div className="container mx-auto px-4 flex justify-between items-center py-5">
                 <Link href="/" className="flex items-center">
                     <img src="/logo2.png" alt="Northgate Automation" className="h-10 w-auto mr-3" />
