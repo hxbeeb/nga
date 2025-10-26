@@ -12,17 +12,17 @@ function scrollToId(id: string) {
 export default function Header(){
 
     return(
-        <div className="sticky top-0 z-50 bg-bg-dark py-4 text-secondary">
-            <div className="container mx-auto px-4 flex justify-between items-center">
+        <div className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-sm border-b border-slate-700 shadow-sm">
+            <div className="container mx-auto px-4 flex justify-between items-center py-5">
                 <Link href="/" className="flex items-center">
-                    <img src="/logo2.png" alt="Northgate Automation" className="h-8 w-auto mr-2" />
-                    <span className="text-2xl font-bold">Northgate Automations</span>
+                    <img src="/logo2.png" alt="Northgate Automation" className="h-10 w-auto mr-3" />
+                    <span className="text-2xl font-bold text-slate-100">Northgate Automation</span>
                 </Link>
-                <ul className="flex space-x-4">
-                    <li><button onClick={() => scrollToId('home')} className="cursor-pointer hover:opacity-70">Home</button></li>
-                    <li><button onClick={() => scrollToId('about')} className="cursor-pointer hover:opacity-70">About</button></li>
-                    <li><button onClick={() => scrollToId('services')} className="cursor-pointer hover:opacity-70">Services</button></li>
-                    <li><button onClick={() => scrollToId('contact')} className="cursor-pointer hover:opacity-70">Contact</button></li>
+                <ul className="flex space-x-6">
+                    <li><button onClick={() => scrollToId('home')} className="cursor-pointer text-slate-300 hover:text-white transition-colors duration-300 text-lg">Home</button></li>
+                    <li><button onClick={() => scrollToId('about')} className="cursor-pointer text-slate-300 hover:text-white transition-colors duration-300 text-lg">About</button></li>
+                    <li><button onClick={() => scrollToId('services')} className="cursor-pointer text-slate-300 hover:text-white transition-colors duration-300 text-lg">Services</button></li>
+                    <li><button onClick={() => scrollToId('contact')} className="cursor-pointer text-slate-300 hover:text-white transition-colors duration-300 text-lg">Contact</button></li>
                 </ul>
             </div>
         </div>

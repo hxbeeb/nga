@@ -13,7 +13,7 @@ export default function Hero(){
     }
     
 return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[calc(100vh-5rem)] overflow-hidden">
         <img className="w-full h-full object-cover brightness-80 blur-xs" src="/bg.png" alt="Hero" />
         
         <div className="absolute inset-0 flex flex-col items-center justify-center">

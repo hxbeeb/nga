@@ -4,76 +4,53 @@
 
 export default function Services(){
     return (
-        <section className=" py-20">
+        <section className="bg-white text-gray-800 py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl font-bold  mb-4">Our Automation Services</h1>
-                    <p className="text-lg  max-w-4xl mx-auto">
-                        At Northgate Automation, we specialize in transforming businesses by eliminating repetitive tasks and streamlining complex workflows. Our services are designed to deliver measurable results: reduced costs, increased accuracy, and more time for your team to focus on strategic growth. Explore how we can build a more efficient future for your business.
+                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Unlock Your Business's Potential Through Smart Automation</h1>
+                    <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+                        We help you reclaim your time by automating the repetitive tasks that slow you down. From streamlining workflows to integrating complex systems, our solutions are designed to boost productivity, reduce costs, and empower your team to focus on what truly matters.
                     </p>
                 </div>
 
-                <div className="space-y-16">
-                    {/* 1. Automation Strategy & Discovery */}
-                    <div className="bg-bg-container rounded-xl p-8 lg:p-10 shadow-sm">
-                        <h2 className="text-2xl font-semibold  mb-3">1. Automation Strategy & Discovery</h2>
-                        <p className=" mb-4">
-                            Don't know where to start? Our Automation Strategy service is the perfect first step. We partner with you to analyze your current business processes, identify the highest-impact automation opportunities, and create a clear, prioritized roadmap. We provide the "what," "why," and "how" before any work begins.
-                        </p>
-                        <p className=" italic mb-6">
-                            Ideal for: Businesses that are new to automation or are unsure which processes will yield the best return on investment.
-                        </p>
-                        <div>
-                            <h3 className="text-lg font-semibold  mb-3">Key Activities:</h3>
-                            <ul className="list-disc list-inside space-y-2 ">
-                                <li><span className="font-medium">Process Analysis & Mapping:</span> A deep dive into your current workflows.</li>
-                                <li><span className="font-medium">Opportunity Identification:</span> Pinpointing bottlenecks and repetitive manual tasks.</li>
-                                <li><span className="font-medium">ROI Calculation:</span> Estimating the time and cost savings for each potential project.</li>
-                                <li><span className="font-medium">Technology Recommendation:</span> Selecting the right tools for the job.</li>
-                                <li><span className="font-medium">Phased Implementation Roadmap:</span> A step-by-step plan for your automation journey.</li>
-                            </ul>
+                <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+                    {/* Service Card 1 */}
+                    <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-gray-200">
+                        <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-6">
+                            <svg className="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
                         </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 mb-3">Process Auditing & Strategy</h2>
+                        <p className="text-gray-600">
+                           We analyze your existing workflows to find the best opportunities for automation, providing a clear roadmap to efficiency with a focus on maximum ROI.
+                        </p>
                     </div>
 
-                    {/* 2. Business Process Automation (BPA) */}
-                    <div className="bg-bg-container rounded-xl p-8 lg:p-10 shadow-sm">
-                        <h2 className="text-2xl font-semibold  mb-3">2. Business Process Automation (BPA)</h2>
-                        <p className=" mb-4">
-                            We design and implement solutions to handle your routine, rule-based tasks. Through Business Process Automation, we re-engineer your workflows to run more efficiently, often using the software you already own. This service focuses on automating processes like data entry, report generation, and invoice processing to operate 24/7 with perfect accuracy.
-                        </p>
-                        <p className=" italic mb-6">
-                            Ideal for: Departments like Finance, HR, and Operations that are burdened with high-volume digital paperwork and data management.
-                        </p>
-                        <div>
-                            <h3 className="text-lg font-semibold  mb-3">Key Activities:</h3>
-                            <ul className="list-disc list-inside space-y-2 ">
-                                <li><span className="font-medium">Workflow Automation:</span> Streamlining tasks within your existing software (e.g., Microsoft 365, Google Workspace).</li>
-                                <li><span className="font-medium">Data Scraping & Entry:</span> Automating the collection and input of information from websites and documents.</li>
-                                <li><span className="font-medium">Automated Report Generation:</span> Consolidating data from multiple sources into scheduled reports.</li>
-                                <li><span className="font-medium">Task Management Automation:</span> Ensuring sequential tasks are assigned and completed without manual intervention.</li>
-                            </ul>
+                    {/* Service Card 2 */}
+                    <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-gray-200">
+                        <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-6">
+                            <svg className="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
                         </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 mb-3">Workflow & Task Automation</h2>
+                        <p className="text-gray-600">
+                           We build solutions that automate day-to-day tasks like data entry, report generation, and notifications to increase accuracy and save time.
+                        </p>
                     </div>
 
-                    {/* 3. Custom Automation & Systems Integration */}
-                    <div className="bg-bg-container rounded-xl p-8 lg:p-10 shadow-sm">
-                        <h2 className="text-2xl font-semibold  mb-3">3. Custom Automation & Systems Integration</h2>
-                        <p className=" mb-4">
-                            Sometimes, an off-the-shelf solution doesn't exist. Our custom automation service is for your most unique challenges. We write custom scripts and build API integrations to connect disparate systems, creating a seamless flow of data across your entire software ecosystem. If two applications need to talk to each other, we can build the bridge.
-                        </p>
-                        <p className=" italic mb-6">
-                            Ideal for: Businesses with legacy systems, specialized industry software, or complex workflows that standard tools can't handle.
-                        </p>
-                        <div>
-                            <h3 className="text-lg font-semibold  mb-3">Key Activities:</h3>
-                            <ul className="list-disc list-inside space-y-2 ">
-                                <li><span className="font-medium">API Integration:</span> Connecting your CRM, ERP, and other business applications.</li>
-                                <li><span className="font-medium">Custom Python/PowerShell Scripting:</span> Creating powerful, tailored scripts to automate specific tasks.</li>
-                                <li><span className="font-medium">Database Automation:</span> Automating data cleanup, migration, and backup tasks.</li>
-                                <li><span className="font-medium">Workflow Orchestration:</span> Building a central system to manage a sequence of automated tasks across multiple platforms.
-                                </li>
-                            </ul>
+                    {/* Service Card 3 */}
+                    <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow border border-gray-200">
+                        <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 mb-6">
+                            <svg className="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                            </svg>
                         </div>
+                        <h2 className="text-2xl font-semibold text-gray-900 mb-3">Custom Integration & Development</h2>
+                        <p className="text-gray-600">
+                            We connect your different software applications and build custom scripts for your unique business challenges, creating a seamless flow of information.
+                        </p>
                     </div>
                 </div>
             </div>
